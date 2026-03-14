@@ -73,7 +73,7 @@ end
 Securing Switches using AAA: authentication, authorization, accounting.
 config t
 username admin privilege 15 secret pass
-username namemo privilege 15 secret pass
+username admin privilege 15 secret pass
 line vty 0 14
 login local
 end
@@ -189,10 +189,10 @@ config t
 ip routing
 ip dhcp pool CAMERA6
 host 10.11.50.6 255.255.255.0
-client-identifier abcd.1234.cafb
+client-identifier 001a.0709.c25b
 ip dhcp pool CAMERA8
 host 10.11.50.8 255.255.255.0
-client-identifier abcd.1234.cafb
+client-identifier 001a.070a.27e4
 end
 show ip dhcp binding
 
@@ -267,12 +267,12 @@ ephone-dn 8
 ephone-dn 10
  number 1198
 Ephone 1
-  Mac-address cafe.face.baba
+  Mac-address ccd8.c1fb.09ff
   type 8945
   button 1:8 2:7 3:6 4:5
   restart
 Ephone 2
-  Mac-address fafa.caca.baba
+  Mac-address ccd8.c1fb.10a9
   type 8945
   button 1:4 2:3 3:2 4:1
   restart  
